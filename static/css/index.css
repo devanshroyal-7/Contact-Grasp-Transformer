@@ -732,6 +732,134 @@ a:focus {
 }
 
 
+/* Project-page comparison layouts */
+.pair-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.quad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.triple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.media-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #0f172a;
+}
+
+.media-card .caption {
+  padding: 0.85rem 1rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.media-card .caption strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.figure-block {
+  margin: 1.5rem 0 2rem;
+}
+
+.figure-block img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.figure-block .caption {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.metric-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  font-size: 0.98rem;
+}
+
+.metric-table th,
+.metric-table td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+}
+
+.metric-table th {
+  background: var(--background-accent);
+  font-weight: 700;
+}
+
+.metric-table td.num,
+.metric-table th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-table .win {
+  color: #047857;
+  font-weight: 700;
+}
+
+.code-block {
+  background: var(--background-accent);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.section-lead {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.title.is-3.has-text-left::after {
+  left: 0;
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pair-grid,
+  .quad-grid,
+  .triple-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Print styles */
 @media print {
   .more-works-container {

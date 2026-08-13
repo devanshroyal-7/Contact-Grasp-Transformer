@@ -3,230 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="Contact-GraspTransformer — Devansh Royal J., Aida Mirebrahimi, Tim Wang, Dinesh Varun Shankar K.">
+  <meta name="description" content="Replacing Contact-GraspNet's PointNet++ backbone with Point Transformer v3 improves 6-DoF grasp prediction and cuts inference time from 114 ms to 67 ms.">
+  <meta name="keywords" content="robotic grasping, Contact-GraspNet, Point Transformer v3, point clouds, 6-DoF grasps, MuJoCo, ACRONYM">
+  <meta name="author" content="Devansh Royal J., Aida Mirebrahimi, Tim Wang, Dinesh Varun Shankar K.">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="Carnegie Mellon University — Introduction to Deep Learning">
+  <meta property="og:title" content="Contact-GraspTransformer">
+  <meta property="og:description" content="Attention-based 6-DoF grasp prediction from point clouds. PTv3 vs PointNet++ on ACRONYM, with MuJoCo lift validation.">
+  <meta property="og:url" content="https://devanshroyal-7.github.io/Contact-Grasp-Transformer/">
+  <meta property="og:image" content="https://devanshroyal-7.github.io/Contact-Grasp-Transformer/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:published_time" content="2026-05-01T00:00:00.000Z">
+  <meta property="article:author" content="Devansh Royal J.">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="robotic grasping">
+  <meta property="article:tag" content="point transformers">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="Contact-GraspTransformer">
+  <meta name="twitter:description" content="Attention-based 6-DoF grasp prediction from point clouds. PTv3 vs PointNet++ on ACRONYM, with MuJoCo lift validation.">
+  <meta name="twitter:image" content="https://devanshroyal-7.github.io/Contact-Grasp-Transformer/static/images/social_preview.png">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="citation_title" content="Contact-GraspTransformer">
+  <meta name="citation_author" content="Royal J., Devansh">
+  <meta name="citation_author" content="Mirebrahimi, Aida">
+  <meta name="citation_author" content="Wang, Tim">
+  <meta name="citation_author" content="Shankar K., Dinesh Varun">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="CMU 11-785 Introduction to Deep Learning, Spring 2026">
+  <meta name="citation_pdf_url" content="https://devanshroyal-7.github.io/Contact-Grasp-Transformer/static/pdfs/paper.pdf">
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>Contact-GraspTransformer</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "Contact-GraspTransformer",
+    "description": "Replacing Contact-GraspNet's PointNet++ backbone with Point Transformer v3 for 6-DoF grasp prediction from point clouds.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Devansh Royal J."},
+      {"@type": "Person", "name": "Aida Mirebrahimi"},
+      {"@type": "Person", "name": "Tim Wang"},
+      {"@type": "Person", "name": "Dinesh Varun Shankar K."}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "datePublished": "2026-05-01",
+    "publisher": {"@type": "Organization", "name": "Carnegie Mellon University"},
+    "url": "https://devanshroyal-7.github.io/Contact-Grasp-Transformer/",
+    "image": "https://devanshroyal-7.github.io/Contact-Grasp-Transformer/static/images/social_preview.png",
+    "keywords": ["robotic grasping", "Point Transformer v3", "Contact-GraspNet", "point clouds"],
+    "isAccessibleForFree": true
   }
   </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
   <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="Related papers">
+      <i class="fas fa-book"></i>
+      Related work
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
+        <h4>Papers this project builds on</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()" aria-label="Close">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/2103.14127" class="work-item" target="_blank" rel="noopener">
           <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <h5>Contact-GraspNet</h5>
+            <p>Contact-centric 6-DoF grasp generation from point clouds.</p>
+            <span class="work-venue">ICRA 2021</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/2312.10035" class="work-item" target="_blank" rel="noopener">
           <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>Point Transformer V3</h5>
+            <p>Serialized windowed attention for efficient point-cloud transformers.</p>
+            <span class="work-venue">CVPR 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/2011.09584" class="work-item" target="_blank" rel="noopener">
           <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>ACRONYM</h5>
+            <p>Large-scale simulated 6-DoF grasp dataset on ShapeNetSem objects.</p>
+            <span class="work-venue">2020</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
@@ -240,237 +135,400 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Contact-GraspTransformer</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://github.com/devanshroyal-7" target="_blank" rel="noopener">Devansh Royal J.</a>,
+              </span>
+              <span class="author-block">Aida Mirebrahimi,</span>
+              <span class="author-block">Tim Wang,</span>
+              <span class="author-block">
+                <a href="https://github.com/dineshvarunshankar" target="_blank" rel="noopener">Dinesh Varun Shankar K.</a>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Carnegie Mellon University<br>11-785 Introduction to Deep Learning, Spring 2026</span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/paper.pdf" target="_blank" rel="noopener"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/devanshroyal-7/Contact-GraspTransformer" target="_blank" rel="noopener"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://arxiv.org/abs/2103.14127" target="_blank" rel="noopener"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>CGN</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.10035" target="_blank" rel="noopener"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>PTv3</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="figure-block">
+          <img src="static/images/mug_grasps.png" alt="Ground-truth, PointNet++, and PTv3 grasps on a test mug">
+          <p class="caption">
+            Ground-truth grasps (left, green top-1) versus PointNet++ (center) and PTv3 (right, blue top-1)
+            on the same test mug. PTv3 spreads candidates over the body with more diverse approach directions;
+            PointNet++ concentrates on the rim.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robotic grasping in cluttered environments requires reasoning over complex 3D geometry
+              from partial observations. Contact-GraspNet (CGN) predicts grasps directly from point
+              clouds, but relies on PointNet++, which limits global context. We propose
+              <strong>Contact-GraspTransformer (CGT)</strong>, which keeps CGN's contact heads and
+              loss and replaces the backbone with Point Transformer v3 (PTv3).
+            </p>
+            <p>
+              On a 15-category ACRONYM subset, CGT reduces test loss from 0.82 to 0.75 and cuts
+              inference time from 113.64&nbsp;ms to 66.97&nbsp;ms, at the cost of a larger model
+              (0.8M → 8.8M parameters). Transformer serialization plus windowed attention improves
+              both accuracy and speed; the remaining trade-off is parameter count, and gripper-width
+              classification is the one term where PointNet++ still wins.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-left">Method</h2>
+      <p class="section-lead">
+        Both models take a 4,096-point cloud and predict a grasp at every point: confidence,
+        approach and baseline directions, and gripper width. The only architectural change is the
+        backbone. PTv3 voxelizes the cloud, serializes voxels with space-filling curves, and runs
+        windowed attention instead of PointNet++ radius-ball grouping.
+      </p>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+      <div class="pair-grid">
+        <div class="media-card">
+          <img src="static/images/gripper.png" alt="Franka gripper with contact, approach, baseline, width, and depth annotated">
+          <p class="caption">
+            <strong>Contact-centric grasp</strong>
+            Translation is anchored at a surface contact <em>c</em>. Rotation is built from the
+            approach <em>a</em> and baseline <em>b</em> after an in-network Gram–Schmidt step.
+          </p>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <div class="media-card">
+          <img src="static/images/voxelization.png" alt="Voxelized point cloud colored by height">
+          <p class="caption">
+            <strong>Voxelization</strong>
+            Points are quantized onto a grid. Multiple points can share a voxel; they remain
+            distinct tokens for the transformer stages.
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
+      <p class="section-lead">
+        Serialization uses four curves — Morton (Z), transposed Morton, 3-D Hilbert, and transposed
+        Hilbert — with a shuffle-order augmentation so the network does not overfit one 1-D layout.
+      </p>
+      <div class="quad-grid">
+        <div class="media-card">
+          <img src="static/images/sfc_z.png" alt="Morton Z-order curve iterations">
+          <p class="caption"><strong>Morton (Z-order)</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/sfc_tz.png" alt="Transposed Morton curve iterations">
+          <p class="caption"><strong>Transposed Morton</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/sfc_hilbert.png" alt="3-D Hilbert curve iterations">
+          <p class="caption"><strong>3-D Hilbert</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/sfc_thilbert.png" alt="Transposed 3-D Hilbert curve iterations">
+          <p class="caption"><strong>Transposed Hilbert</strong></p>
+        </div>
+      </div>
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <p class="section-lead">
+        Encoder stages pool along the serialized order; decoder stages unpool with skip connections.
+        The figure below shows successive encoder voxel grids from our visualization tools.
+      </p>
+      <div class="triple-grid">
+        <div class="media-card">
+          <img src="static/images/encoder_s0.png" alt="Encoder stage 0 voxels">
+          <p class="caption"><strong>Encoder stage 0</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/encoder_s1.png" alt="Encoder stage 1 voxels">
+          <p class="caption"><strong>Encoder stage 1</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/encoder_s2.png" alt="Encoder stage 2 voxels">
+          <p class="caption"><strong>Encoder stage 2</strong></p>
+        </div>
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-left">Results</h2>
+      <p class="section-lead">
+        Matched training: same CGN heads, same loss, same 4,096-point clouds, held-out meshes never
+        seen at train time. PTv3 uses the sparse3d xCPE variant.
+      </p>
 
+      <table class="metric-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th class="num">PointNet++</th>
+            <th class="num">PTv3 (sparse3d)</th>
+            <th class="num">Δ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>test/loss</td>
+            <td class="num">0.82</td>
+            <td class="num win">0.75</td>
+            <td class="num">−0.07</td>
+          </tr>
+          <tr>
+            <td>test/loss_conf</td>
+            <td class="num">0.66</td>
+            <td class="num win">0.62</td>
+            <td class="num">−0.04</td>
+          </tr>
+          <tr>
+            <td>test/loss_adds</td>
+            <td class="num">0.046</td>
+            <td class="num win">0.036</td>
+            <td class="num">−0.010</td>
+          </tr>
+          <tr>
+            <td>test/loss_width</td>
+            <td class="num win">0.42</td>
+            <td class="num">0.78</td>
+            <td class="num">+0.36</td>
+          </tr>
+          <tr>
+            <td>Inference time (ms)</td>
+            <td class="num">113.64</td>
+            <td class="num win">66.97</td>
+            <td class="num">−46.67</td>
+          </tr>
+          <tr>
+            <td>Parameters (M)</td>
+            <td class="num win">0.8</td>
+            <td class="num">8.8</td>
+            <td class="num">+8.0</td>
+          </tr>
+        </tbody>
+      </table>
 
-<!--BibTex citation -->
+      <div class="triple-grid">
+        <div class="media-card">
+          <img src="static/images/train_loss.png" alt="Train loss curves for PTv3 and PointNet++">
+          <p class="caption"><strong>Train loss</strong> PTv3 (orange) vs PointNet++ (purple).</p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/val_loss.png" alt="Validation loss curves">
+          <p class="caption"><strong>Validation loss</strong> PTv3 converges lower and more stably.</p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/test_loss.png" alt="Test loss bar chart">
+          <p class="caption"><strong>Test loss</strong> Held-out objects, matched conditions.</p>
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/sweep.png" alt="Weights and Biases parallel coordinates plot of the PTv3 hyperparameter sweep">
+        <p class="caption">
+          80-trial Bayesian sweep on PTv3. Best region: learning rate 2e-4–1e-3, AdamW, cosine or
+          step schedule, and CGN loss weights rebalanced so ADD-S is 1–3 and width is &lt; 0.2
+          (the paper defaults of 10 and 1 over-weight those terms).
+        </p>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/xcpe.png" alt="Validation loss for sparse3d, knn, and conv1d xCPE">
+        <p class="caption">
+          xCPE ablation. <strong>sparse3d</strong> (0.75) is the selected variant: faster than k-NN
+          and more accurate than conv1d. knn 0.78, conv1d 0.80.
+        </p>
+      </div>
+
+      <p class="section-lead">
+        Top-1 confidence on one held-out scene per category. PTv3 is ahead on every object; the
+        gap is largest on cups and pencils, where local grouping has little geometry to work with.
+      </p>
+      <table class="metric-table">
+        <thead>
+          <tr>
+            <th>Object</th>
+            <th class="num">PointNet++</th>
+            <th class="num">PTv3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cup</td><td class="num">0.51</td><td class="num win">0.79</td></tr>
+          <tr><td>Bottle</td><td class="num">0.50</td><td class="num win">0.51</td></tr>
+          <tr><td>Bowl</td><td class="num">0.50</td><td class="num win">0.51</td></tr>
+          <tr><td>Mug</td><td class="num">0.50</td><td class="num win">0.52</td></tr>
+          <tr><td>Pencil</td><td class="num">0.06</td><td class="num win">0.27</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-left">MuJoCo simulation</h2>
+      <p class="section-lead">
+        Loss does not prove a grasp can be executed. We replay top-1 predictions on a Franka Panda
+        in MuJoCo: approach along the predicted vector, close, then lift 15&nbsp;cm. Success is an
+        object lift of at least 3&nbsp;cm. These clips are the same recordings hosted on the
+        <a href="https://sites.google.com/andrew.cmu.edu/contact-grasptransformer/home" target="_blank" rel="noopener">Google Sites page</a>.
+      </p>
+
+      <h3 class="title is-5">Bottle — PointNet++ vs PTv3</h3>
+      <div class="pair-grid">
+        <div class="media-card">
+          <video controls muted loop playsinline poster="static/images/sim_bottle_pn2.png" preload="metadata">
+            <source src="static/videos/bottle_pn2.mp4" type="video/mp4">
+          </video>
+          <p class="caption"><strong>PointNet++</strong> Top-1 grasp execution on the test bottle.</p>
+        </div>
+        <div class="media-card">
+          <video controls muted loop playsinline poster="static/images/sim_bottle_ptv3.png" preload="metadata">
+            <source src="static/videos/bottle_ptv3.mp4" type="video/mp4">
+          </video>
+          <p class="caption"><strong>PTv3</strong> Top-1 grasp execution on the same object.</p>
+        </div>
+      </div>
+      <div class="triple-grid">
+        <div class="media-card">
+          <img src="static/images/bottle_gt.png" alt="Ground-truth grasps on a bottle">
+          <p class="caption"><strong>Ground truth</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/bottle_pn2.png" alt="PointNet++ predicted grasps on a bottle">
+          <p class="caption"><strong>PointNet++ candidates</strong></p>
+        </div>
+        <div class="media-card">
+          <img src="static/images/bottle_ptv3.png" alt="PTv3 predicted grasps on a bottle">
+          <p class="caption"><strong>PTv3 candidates</strong></p>
+        </div>
+      </div>
+
+      <h3 class="title is-5">Mug — PointNet++ vs PTv3</h3>
+      <div class="pair-grid">
+        <div class="media-card">
+          <video controls muted loop playsinline poster="static/images/sim_mug_pn2.png" preload="metadata">
+            <source src="static/videos/mug_pn2.mp4" type="video/mp4">
+          </video>
+          <p class="caption"><strong>PointNet++</strong> Rim grasp; the mug lifts.</p>
+        </div>
+        <div class="media-card">
+          <video controls muted loop playsinline poster="static/images/sim_mug_ptv3.png" preload="metadata">
+            <source src="static/videos/mug_ptv3.mp4" type="video/mp4">
+          </video>
+          <p class="caption"><strong>PTv3</strong> Handle grasp; the mug lifts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-left">Codebase</h2>
+      <p class="section-lead">
+        The public repo is
+        <a href="https://github.com/devanshroyal-7/Contact-GraspTransformer" target="_blank" rel="noopener">Contact-GraspTransformer</a>.
+        It covers ACRONYM subsetting, synthetic RGB-D generation, training both backbones,
+        inference to ACRONYM-style <code>.h5</code> files, Open3D visualization, and the MuJoCo
+        evaluator used for the videos above.
+      </p>
+      <pre class="code-block"><code>conda create -n idlsproj python=3.9 -y
+conda activate idlsproj
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+pip install -r requirements.txt -r requirements-data.txt -r requirements-viz.txt -r requirements-eval.txt
+
+python data/acronym/build_acronym_subset.py --src /path/to/acronym
+python data/generate_data.py --category Mug --n_views 5
+python train.py --data_dir data/out --backbone ptv3 --epochs 10
+python inference_cli.py --ckpt checkpoints/ptv3/&lt;run&gt;/best.pt --points data/out/test/Mug/&lt;hash&gt;/000.npz
+python -m eval.visualize_grasp --source pred_ptv3 --checkpoint checkpoints/ptv3/&lt;run&gt;/best.pt \
+  --view_npz data/out/test/Mug/&lt;hash&gt;/000.npz --top_k 5 --compare_labels_preview</code></pre>
+      <p class="section-lead">
+        Full install notes, coordinate frames, and MuJoCo flags are in
+        <a href="https://github.com/devanshroyal-7/Contact-GraspTransformer/blob/main/SETUP.md" target="_blank" rel="noopener">SETUP.md</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-left">Team</h2>
+      <table class="metric-table">
+        <thead>
+          <tr><th>Person</th><th>Contribution</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Devansh Royal J.</td>
+            <td>PTv3 backbone, data generation, dataloader, inference, voxel visualization</td>
+          </tr>
+          <tr>
+            <td>Aida Mirebrahimi</td>
+            <td>Literature review, project definition, augmentation, loss formulation, writing</td>
+          </tr>
+          <tr>
+            <td>Tim Wang</td>
+            <td>Training loop, checkpointing, LR scheduling, evaluation metric, training</td>
+          </tr>
+          <tr>
+            <td>Dinesh Varun Shankar K.</td>
+            <td>PointNet++ baseline, backbone evaluation, MuJoCo simulation, grasp visualization, hyperparameter sweep</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
@@ -480,41 +538,36 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@techreport{Royal2026CGT,
+  title   = {Contact-GraspTransformer},
+  author  = {Royal J., Devansh and Mirebrahimi, Aida and Wang, Tim and Shankar K., Dinesh Varun},
+  year    = {2026},
+  institution = {Carnegie Mellon University},
+  note    = {11-785 Introduction to Deep Learning, Spring 2026},
+  url     = {https://devanshroyal-7.github.io/Contact-Grasp-Transformer/}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>,
+              adopted from
+              <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a>.
+              Licensed under
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </main>
+</body>
+</html>
