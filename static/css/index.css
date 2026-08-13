@@ -760,6 +760,8 @@ a:focus {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .media-card img,
@@ -770,11 +772,20 @@ a:focus {
   background: #0f172a;
 }
 
+/* Sim clips are 2488x1566. Reserve that box so posters and playback
+   keep the same height and captions stay aligned in pair-grid. */
+.media-card video {
+  aspect-ratio: 1244 / 783;
+  object-fit: contain;
+  background: #f8fafc;
+}
+
 .media-card .caption {
   padding: 0.85rem 1rem 1rem;
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.5;
+  margin-top: auto;
 }
 
 .media-card .caption strong {
